@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="80" viewBox="0 0 400 80" role="img" aria-labelledby="title">
+  <title>Coin Converter Logo</title>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffd5"/>
+      <stop offset="100%" stop-color="#00a68e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rectangle -->
+  <rect width="400" height="80" fill="#080815"/>
+  <!-- Centered title -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="32" fill="url(#grad)" >
+    Coin Converter
+  </text>
+</svg>

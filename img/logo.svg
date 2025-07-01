@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="60" fill="#0c1b1f"/>
-  <text x="60" y="38" font-family="Arial, sans-serif" font-size="28" fill="#1de9b6">MoedaNow</text>
-  <path d="M30 20 L35 25 L30 30" stroke="#1de9b6" stroke-width="2" fill="none"/>
-  <path d="M40 30 L35 25 L40 20" stroke="#1de9b6" stroke-width="2" fill="none"/>
-</svg>

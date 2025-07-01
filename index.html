@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <img src="img/logo.svg" alt="" srcset="">
+    <img src="img/coin_converter_logo.svg" alt="" srcset="">
     <main>
-        <form action="">
+        <form action="" id="form">
             <label for="amount">Valor</label>
             <input type="text" name="amount" id="amount" placeholder="0" required />
 
@@ -24,8 +24,8 @@
             <select name="currency" id="currency" required>
                 <option value="" disabled selected hidden>Selecione a moeda</option>
                 <option value="USD">Dólar americano</option>
-                <option value="">Euro</option>
-                <option value="">Libra Esterlina</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
             </select>
 
             <button type="submit">Converter para Reais</button>
@@ -33,7 +33,7 @@
     </main>
 
     <footer>
-        <span id="description"> US$ 1 = 4,87</span>
+        <span id="description"> US$ 1 = 4,87R$</span>
         <h1 id="result">6000,00 Reais</h1>
     </footer>
 

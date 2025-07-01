@@ -94,8 +94,8 @@ select {
     -webkit-appearance: none;
     appearance: none;
 
-    background: url(img/chevron-down.svg) no-repeat;
-    background-position: calc(100%-0.75rem) center !important;
+    background: url("img/chevron-down.svg") no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
     background-color: var(--main-bg-color);
 
     cursor: pointer;
@@ -149,7 +149,9 @@ footer {
     text-align: center;
     display: none;
 
-    overflow-y: scroll;
+    border-radius: 1.5rem;
+
+   
 }
 
 .show-result {
