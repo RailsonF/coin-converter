@@ -1,0 +1,173 @@
+/*Resetando os estilos padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*declarando as variáveis que vão receber as cores a serem utilizadas*/
+:root {
+    --main-bg-color: #0c1b1f;
+    --second-bg-color: #123c3c;
+    --border: #26a69a;
+    --btn-focus: #1de9b6;
+    --text-primary: #e0f2f1;
+    --text-secondary: #80cbc4;
+}
+
+
+/*Definindo a largura da barra de rolagem vertical*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/*Definindo a cor da trilha de rolagem*/
+::-webkit-scrollbar-track {
+    background-color: var(--main-bg-color);
+}
+
+/*Definindo a cor da barra de rolagem*/
+::-webkit-scrollbar-thumb {
+    background-color: var(--second-bg-color);
+}
+
+body {
+    width: 100%;
+
+
+    background-image: url(img/bg.png);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 3.12rem;
+
+    color: var(--text-primary);
+
+}
+
+main {
+    width: 480px;
+    border-radius: 1.5rem;
+
+    border: 1px solid var(--border);
+    overflow-y: hidden;
+
+}
+
+form {
+    background-color: var(--second-bg-color);
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 3.5rem 4rem;
+}
+
+label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+
+input,
+select {
+    outline: 0;
+
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background-color: var(--main-bg-color);
+    padding: 1.25rem 1rem;
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: url(img/chevron-down.svg) no-repeat;
+    background-position: calc(100%-0.75rem) center !important;
+    background-color: var(--main-bg-color);
+
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input::placeholder,
+select:invalid,
+option {
+    color: var(--text-secondary);
+}
+
+input:focus,
+select:focus {
+    border: 1px solid var(--border);
+}
+
+button {
+    height: 3.25rem;
+
+    background-color: var(--second-bg-color);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    color: var(--text-primary);
+
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    margin-top: 3rem;
+    outline: 0;
+}
+
+button:hover {
+    background-color: var(--btn-focus);
+}
+
+button:focus {
+    outline: 1.5px solid var(--btn-focus);
+}
+
+footer {
+    background-color: #1f2151;
+    padding: 2.5rem;
+    max-height: 196px;
+
+    text-align: center;
+    display: none;
+
+    overflow-y: scroll;
+}
+
+.show-result {
+    display: block;
+}
+
+footer span {
+    color: #7d8dec;
+    font-size: 1rem;
+    font-family: "IBM Plex Mono", monospace;
+    margin-bottom: 0.5rem;
+    line-height: 1.25rem;
+}
+
+footer h1 {
+    color: #f1f2f6;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+    word-break: break-all;
+}
