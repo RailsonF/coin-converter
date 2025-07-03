@@ -173,3 +173,46 @@ footer h1 {
     line-height: 3rem;
     word-break: break-all;
 }
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    input,
+    select {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    button {
+        height: 3rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    footer span {
+        font-size: 0.875rem;
+    }
+}
