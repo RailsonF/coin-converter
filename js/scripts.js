@@ -12,6 +12,10 @@ const description = document.querySelector("#description")
 const footer = document.querySelector("footer")
 
 
+//Função que vai apenas calcular o valor
+function calculateConversion(rate, value) {
+    result.innerHTML = (inputValue * valorDollar).toFixed(2) + " R$"
+}
 //Lógica do evento
 form.addEventListener('submit', (event) => {
     //Impedindo o comportamento padrão de enviar o forme recarregar a página
@@ -31,6 +35,7 @@ form.addEventListener('submit', (event) => {
     }
     if (selectvalue == "USD") {
         footer.style.display = "block"
+        calculateConversion(inputValue)
         result.innerHTML = (inputValue * valorDollar).toFixed(2) + " R$"
         description.innerHTML = `US$ 1 = ${valorDollar}R$`
 
