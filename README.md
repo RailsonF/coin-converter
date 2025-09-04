@@ -37,6 +37,6 @@ Em versões futuras, pretendo implementar:
 ## 📂 Como executar o projeto localmente?
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/coin-converter.git
+   git clone https://github.com/RailsonF/coin-converter.git
 2. Abra o arquivo index.html no seu navegador.
 Nenhuma instalação de dependências é necessária.
